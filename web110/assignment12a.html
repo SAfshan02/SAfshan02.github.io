@@ -34,6 +34,14 @@
             ctx2.fillStyle = "blue";
             ctx2.fill();
             ctx2.closePath();
+
+            ctx2.beginPath();
+            ctx2.moveTo(350, 20); // Move to starting point of triangle
+            ctx2.lineTo(300, 120); // Draw line to second point
+            ctx2.lineTo(400, 120); // Draw line to third point
+            ctx2.closePath(); // Close the path to complete the triangle
+            ctx2.fillStyle = 'green';
+            ctx2.fill(); // Fill the triangle with green color
         });
     </script>
 </head>
