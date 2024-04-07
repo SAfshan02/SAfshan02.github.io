@@ -12,10 +12,8 @@
             document.querySelector("h1").innerText = "Syedda Afshan";
 
             // Display current date and time in a paragraph
-            const dateTimeParagraph = document.getElementById('date-time');
-            const currentDate = new Date();
-            dateTimeParagraph.textContent = 'Current date and time: ' + currentDate.toLocaleString();
-            
+            document.querySelector("p").innerText = new Date().toLocaleString();
+
             // Write name on canvas
             var canvas1 = document.getElementById("canvas1");
             var ctx1 = canvas1.getContext("2d");
@@ -36,13 +34,6 @@
             ctx2.fillStyle = "blue";
             ctx2.fill();
             ctx2.closePath();
-
-            ctx2.beginPath();
-            ctx2.arc(10, 10, 50, 50); // Draw a square
-            ctx2.fillStyle = "green";
-            ctx2.fill();
-            ctx2.closePath();
-
         });
     </script>
 </head>
