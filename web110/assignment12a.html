@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 12a</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // JavaScript code for the activities
+        document.addEventListener("DOMContentLoaded", function() {
+            // Display name in a heading
+            document.querySelector("h1").innerText = "Syedda Afshan";
+
+            // Display current date and time in a paragraph
+            document.querySelector("p").innerText = new Date().toLocaleString();
+
+            // Write name on canvas
+            var canvas1 = document.getElementById("canvas1");
+            var ctx1 = canvas1.getContext("2d");
+            ctx1.font = "30px Arial";
+            ctx1.fillText("Syedda Afshan", 10, 50);
+
+            // Draw shapes on another canvas
+            var canvas2 = document.getElementById("canvas2");
+            var ctx2 = canvas2.getContext("2d");
+            ctx2.beginPath();
+            ctx2.rect(20, 20, 150, 100); // Draw a rectangle
+            ctx2.fillStyle = "red";
+            ctx2.fill();
+            ctx2.closePath();
+
+            ctx2.beginPath();
+            ctx2.arc(240, 70, 50, 0, Math.PI * 2); // Draw a circle
+            ctx2.fillStyle = "blue";
+            ctx2.fill();
+            ctx2.closePath();
+        });
+    </script>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+    <canvas id="canvas1" width="400" height="100"></canvas>
+    <canvas id="canvas2" width="400" height="200"></canvas>
+</body>
+</html>
